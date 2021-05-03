@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ratings database</title>
+</head>
+<body>
+	<h2>Here is the result of your submission, [[${movieRating.userName}]]:</h2>
+	
+	Title: <span th:inline="text"> [[${movieRating.title}]]</span> <br />
+	Rating: <span th:inline="text"> [[${movieRating.rating}]]</span> <br />
+	Submitted By: <span th:inline="text"> [[${movieRating.userName}]]</span> <br />
+	Date: <span th:inline="text"> [[${movieRating.date}]]</span> <br />
+	Time: <span th:inline="text"> [[${movieRating.time}]]</span> <br />
+</body>
+</html>
